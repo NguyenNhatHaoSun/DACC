@@ -1,0 +1,13 @@
+li.nav {
+  padding-top: 22px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 25px;
+}
+li.nav:hover {
+  background: #9999;
+  cursor: pointer;
+}
+.categories {
+  height: 70px;
+}

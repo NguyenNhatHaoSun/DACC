@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./cart.css">
+</head>
+
+<body>
+    <!-- place navbar here -->
+    <div class="container-fluid p-0" style="background-color: #515154;height: 70px;position:sticky;top:0;z-index: 1;">
+        <div class="container d-flex" style="height: 75px;">
+            <div class="mt-3">
+                <img style="max-width: 173px;max-height: 64px;opacity: 1;object-fit: cover;cursor: pointer;"
+                    src="https://shopdunk.com/images/thumbs/0012445_Logo_ShopDunk.png" alt="logo" />
+            </div>
+            <div style="position: relative;">
+                <ul class="pl-0 d-flex mb-1" style="justify-content: space-evenly;list-style-type: none;">
+                    <li class="nav"
+                        style="padding-top: 22px; padding-left: 18px; padding-right: 18px;padding-bottom: 30px;"><a
+                            style="color: #F4F4F4;font-size: 15px;" href="">iPhone</a></li>
+                    <li class="nav"
+                        style="padding-top: 22px; padding-left: 18px; padding-right: 18px;padding-bottom: 30px;"><a
+                            style="color: #F4F4F4;font-size: 15px;" href="">iPad</a></li>
+                    <li class="nav"
+                        style="padding-top: 22px; padding-left: 18px; padding-right: 18px;padding-bottom: 30px;"><a
+                            style="color: #F4F4F4;font-size: 15px;" href="">Mac</a></li>
+                    <li class="nav"
+                        style="padding-top: 22px; padding-left: 18px; padding-right: 18px;padding-bottom: 30px;"><a
+                            style="color: #F4F4F4;font-size: 15px;" href="">Watch</a></li>
+                    <li class="nav"
+                        style="padding-top: 22px; padding-left: 18px; padding-right: 18px;padding-bottom: 30px;"><a
+                            style="color: #F4F4F4;font-size: 15px;" href="">Âm thanh</a></li>
+                    <li class="nav"
+                        style="padding-top: 22px; padding-left: 18px; padding-right: 18px;padding-bottom: 30px;"><a
+                            style="color: #F4F4F4;font-size: 15px;" href="">Phụ kiện</a></li>
+                    <li class="nav"
+                        style="padding-top: 22px; padding-left: 18px; padding-right: 18px;padding-bottom: 30px;"><a
+                            style="color: #F4F4F4;font-size: 15px;" href="">Máy cũ</a></li>
+                    <li class="nav"
+                        style="padding-top: 22px; padding-left: 18px; padding-right: 18px;padding-bottom: 30px;"><a
+                            style="color: #F4F4F4;font-size: 15px;" href="">Dịch vụ</a></li>
+                    <li class="nav"
+                        style="padding-top: 22px; padding-left: 18px; padding-right: 18px;padding-bottom: 30px;"><a
+                            style="color: #F4F4F4;font-size: 15px;" href="">Khuyến mãi</a></li>
+                </ul>
+            </div>
+            <div class="tool" style="width: 14px;position: relative;top:20px;padding-left: 30px;cursor: pointer">
+                <div class="search"><i style="color: #d2d2d7;font-size: 23px;" class="fas fa-search"></i></div>
+            </div>
+            <div class="bag" style="width: 14px;position: relative;top:20px;left:40px;cursor: pointer;">
+                <i style="color:#d2d2d7;font-size: 23px;" class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="bag" style="width: 14px;position: relative;top:20px;left:65px;cursor: pointer;">
+                <i style="color:#d2d2d7;font-size: 23px;" class="fas fa-user"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-8 mt-3 ">
+                    <div class="invoide">
+                        <div class="invoide-card">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <div class="thead">
+                                        <tr>
+                                            <div></div>
+                                            <th scope="col-1">Hình ảnh</th>
+                                            <th scope="col-2">Tên sản phẩm</th>
+                                            <th scope="col-3">Giá bán</th>
+                                            <th scope="col-4">Số lượng</th>
+                                        </tr>
+                                    </div>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="https://shopdunk.com/images/thumbs/0024431_iphone-15-128gb_80.png"
+                                                alt="iPhone 15">
+                                        </td>
+                                        <td>
+                                            <div class="name">
+                                                <strong>iPhone 15 128GB</strong>
+                                                <p class="invoide-color m-0">Màu sắc: Đen</p>
+                                                <a class="text-primary" href="">Sửa</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span>19.890.000₫</span>
+                                        </td>
+                                        <td>
+                                            <div class="quantity">
+                                                <i class="fas fa-minus"></i>
+                                                <input style="border: none;width: 14px;font-size: 15px;"
+                                                    name="number-quantity" type="text" value="4">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-trash"></i>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="option d-flex">
+                            <div class="invoid-btn">Cặp nhật giỏ hàng</div>
+                            <div class="invoid-btn">Tiếp tục mua sắm</div>
+                        </div>
+
+                    </div>
+                    <!--ALL Product-->
+                    <div class="all-product-detail">
+                        <div class="all-product-detail-title pt-3 pb-3">
+                            <h3>Gợi ý phụ kiện đi kèm </h3>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="product-detail">
+
+                                    <div class="card-product-detail" style="width: 100%;cursor: pointer;">
+                                        <div class="content">
+                                            <div>
+                                                <img class="img-card"
+                                                    src="https://shopdunk.com/images/thumbs/0019158_cuong-luc-apple-iphone-15-series-zeelot-solidleek_240.jpeg"
+                                                    alt="Hinh card dien thoai">
+                                            </div>
+                                            <div class="body-content">
+                                                <div>
+                                                    <a href="">Cường lực Apple iPhone 15 series Zeelot Solidleek</a>
+                                                </div>
+                                                <div class="content-card-price d-flex">
+                                                    <div><span
+                                                            class="content-card-price-no-promotion fw-bold">390.000đ</span>
+                                                    </div>
+                                                    <div><span class="content-card-price-promotion">450.000đ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="content-card-btn"><button class="content-card-btn-buy">
+                                                        Mua ngay
+                                                    </button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--card2-->
+                            <div class="col">
+                                <div class="product-detail">
+
+                                    <div class="card-product-detail" style="width: 100%;cursor: pointer;">
+                                        <div class="content">
+                                            <div>
+                                                <img class="img-card"
+                                                    src="https://shopdunk.com/images/thumbs/0021877_cuong-luc-camera-uniq-optix-for-iphone-15-iphone-15-plus_240.jpeg"
+                                                    alt="Hinh card dien thoai">
+                                            </div>
+                                            <div class="body-content">
+                                                <div>
+                                                    <a href="">Cường lực Camera UNIQ OPTIX for iPhone 15 / iPhone 15 Plus</a>
+                                                </div>
+                                                <div class="content-card-price d-flex">
+                                                    <div><span
+                                                            class="content-card-price-no-promotion fw-bold">350.000đ</span>
+                                                    </div>
+                                                    <div><span class="content-card-price-promotion">400.000đ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="content-card-btn"><button class="content-card-btn-buy">
+                                                        Mua ngay
+                                                    </button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--card3-->
+                            <div class="col">
+                                <div class="product-detail">
+
+                                    <div class="card-product-detail" style="width: 100%;cursor: pointer;">
+                                        <div class="content">
+                                            <div>
+                                                <img class="img-card"
+                                                    src="https://shopdunk.com/images/thumbs/0019158_cuong-luc-apple-iphone-15-series-zeelot-solidleek_240.jpeg"
+                                                    alt="Hinh card dien thoai">
+                                            </div>
+                                            <div class="body-content">
+                                                <div>
+                                                    <a href="">Cường lực Apple iPhone 15 series Zeelot Solidleek</a>
+                                                </div>
+                                                <div class="content-card-price d-flex">
+                                                    <div><span
+                                                            class="content-card-price-no-promotion fw-bold">390.000đ</span>
+                                                    </div>
+                                                    <div><span class="content-card-price-promotion">450.000đ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="content-card-btn"><button class="content-card-btn-buy">
+                                                        Mua ngay
+                                                    </button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--card4-->
+                            <div class="col">
+                                <div class="product-detail">
+
+                                    <div class="card-product-detail" style="width: 100%;cursor: pointer;">
+                                        <div class="content">
+                                            <div>
+                                                <img class="img-card"
+                                                    src="https://shopdunk.com/images/thumbs/0019158_cuong-luc-apple-iphone-15-series-zeelot-solidleek_240.jpeg"
+                                                    alt="Hinh card dien thoai">
+                                            </div>
+                                            <div class="body-content">
+                                                <div>
+                                                    <a href="">Cường lực Apple iPhone 15 series Zeelot Solidleek</a>
+                                                </div>
+                                                <div class="content-card-price d-flex">
+                                                    <div><span
+                                                            class="content-card-price-no-promotion fw-bold">390.000đ</span>
+                                                    </div>
+                                                    <div><span class="content-card-price-promotion">450.000đ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="content-card-btn"><button class="content-card-btn-buy">
+                                                        Mua ngay
+                                                    </button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Form thanh toán-->
+                    <div class="abate">
+                        <div class="information-abate">
+                            <h3>Thông tin thanh toán</h3>
+                        </div>
+                        <div class="login-abate">
+                            <div class="content-login-abate d-flex">
+                            <p class="text-content-login">Đăng nhập ngay để nhận được “điểm thưởng” hấp dẫn khi mua hàng thành công <br> các sản phẩm tại ShopDunk</p>
+                            <button class="btn-login-abate">Đăng nhập ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Register Abate-->
+                    <div class="register-abate mt-3 mb-3">
+                        <div class="form-register-abate p-3">
+                        <input class="register-name" type="text" placeholder="Tên">
+                        <div class="d-flex">
+                        <input class="register-phone mt-4 mb-4" type="text" placeholder="Số điện thoại">
+                        <input class="register-email mt-4 mb-4" type="text" placeholder="Email">
+                        </div>
+                        <div class="title-ship">Hình thức nhận hàng</div>
+                        <div class="choose-ship d-flex mt-2">
+                            <div class="ship-shop">
+                            <input class="radio-shop" type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                            Nhận tại cửa hàng 
+                            </div>
+                            <div class="ship-home">
+                                <input class="radio-home" type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                                Giao hàng tận nơi
+                            </div>
+                        </div>
+                        <div class="choose-addres ">
+                            <div class="d-flex">
+                            <div class="mt-3">Tỉnh, thành phố: <br>
+                                <select class="select-choose-addres-city">
+                                    <option value="0">Chọn tỉnh, thành phố</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                            </div>
+                            <div class="mt-3">Quận, Huyện <br>
+                                <select class="select-choose-addres-district">
+                                    <option value="0"></option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                            </div>
+                            </div>
+                            <div class="mt-3">
+                                <select class="all-addres">
+                                    <option value="0"></option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="clause d-flex">
+                            <input class="checkbox" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            </label>
+                            <p class="text-clause">Xuất hóa đơn công ty</p>
+                        </div>
+                    </div>
+                </div>
+                <!--abate online-->
+                <div class="abate-online">
+                    <div>
+                        <div class="information-abate-online-titile fw-bold">Thông tin thanh toán</div>
+                        <p >Quý khách vui lòng lựa chọn các hình thức thanh toán dưới đây:</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-4 mt-3">
+                    <div class="price-promotion">
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-lg" placeholder="Mã giảm giá">
+                            <span class="input-group-text" id="inputGroup-sizing-lg"><strong class="ad">Áp
+                                    dụng</strong></span>
+
+                        </div>
+                        <div class="total">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="td-tongphu">
+                                            <p class="tongphu">Tổng phụ:</p>
+                                        </td>
+                                        <td>
+
+                                            <p class="phuthu">19.000.100đ</p>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="td-tongcong">
+                                            <p class="tongcong">Tổng cộng:</p>
+                                        </td>
+                                        <td>
+
+                                            <p class="giatongcong text-primary fw-bold">19.000.100đ</p>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="crossbar"></div>
+                        <div class="clause d-flex">
+                            <input class="checkbox" type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            </label>
+                            <p class="text-clause">Tôi đã đọc và đồng ý với <a class="text-clause-a" href="">điều khoản
+                                    và điều
+                                    kiện</a> của website</p>
+                        </div>
+                        <div class="func-order m-3">
+                            <button class="func-order-btn">
+                                Tiến hành đặt hàng
+                            </button>
+                        </div>
+                        <p class="pt m-3 pb-4">(*) Phí phụ thu sẽ được tính khi bạn tiến hành thanh toán.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+
+        </div>
+        </div>
+    </main>
+    <!-- place footer here -->
+    <div class="footer" style="background-color: #1d1d1f">
+        <div class="footer-upper" style="padding-top: 64px; padding-bottom: 21px">
+            <div class="container">
+                <div class="row" style="border-bottom: 1px solid #515154">
+                    <div class="col" style="color: #d2d2d7; font-weight: normal">
+                        <div class="header-footer-upper">
+                            <img style="width: 148px; height: 48px"
+                                src="https://shopdunk.com/images/thumbs/0012445_Logo_ShopDunk.png" alt="logo" />
+                            <p class="ft-body-text pt-4" style="color: antiquewhite">
+                                Năm 2024 sự ra đời chủa Shop HL. Chúng tôi phát triển dựa
+                                trên ý tưởng và các chuỗi cửa hàng trang web iPhone uy tín
+                                nhất và HL shop nhằm mang đến trải nghiệm tốt nhất về sản
+                                phẩm và dịch vụ của Apple cho người dùng Việt Nam.
+                            </p>
+                            <div class="social">
+                                <ul class="p-0 d-flex" style="list-style-type: none">
+                                    <li>
+                                        <a href=""><img src="https://shopdunk.com/Themes/SD/Content/images/Face.png"
+                                                alt="fb" /></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="https://shopdunk.com/Themes/SD/Content/images/Youtube.png"
+                                                alt="yt" /></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="https://shopdunk.com/Themes/SD/Content/images/Zalo.png"
+                                                alt="zl" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="color: #d2d2d7; font-weight: normal">
+                        <div class="header-title" style="padding-left: 60px">
+                            <strong style="font-weight: 400">Thông báo</strong>
+                            <ul style="list-style-type: none; padding: 0; margin-top: 10px">
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Tin tức</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Giới thiệu</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Thông tin</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Nhà báo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Check QA</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Truyền hình</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Lịch sử</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col" style="color: #d2d2d7; font-weight: normal">
+                        <div class="header-title" style="padding-left: 60px">
+                            <strong style="font-weight: 400">Chính sách</strong>
+                            <ul style="list-style-type: none; padding: 0; margin-top: 10px">
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Thu củ đổi mới</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Giao hàng</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Giao hàng (ZaloPay)</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Hủy Giao dịch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Đổi trả</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Bảo hành</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Dịch vụ</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Giải quyết khiếu nại</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Bảo mật thông tin</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Hướng dẫn thanh toán</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col" style="color: #d2d2d7; font-weight: normal">
+                        <div class="header-title" style="padding-left: 60px">
+                            <strong style="font-weight: 400">Địa chỉ & Liên hệ</strong>
+                            <ul style="list-style-type: none; padding: 0; margin-top: 10px">
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Thu củ đổi mới</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Giao hàng</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Giao hàng (ZaloPay)</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Hủy Giao dịch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Đổi trả</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Bảo hành</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Dịch vụ</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Giải quyết khiếu nại</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Bảo mật thông tin</a>
+                                </li>
+                                <li>
+                                    <a style="font-weight: 400; color: #86867b" href="">Hướng dẫn thanh toán</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lower" style="padding-top: 20px; padding-bottom: 32px">
+            <div class="container">
+                <p style="font-size: 13px; line-height: 20px; color: #515154">
+                    © 2016 Công ty Cổ Phần HESMAN Việt Nam GPDKKD: 0107465657 do Sở KH
+                    & ĐT TP. Hà Nội cấp ngày 08/06/2016. <br />
+                    Địa chỉ: Số 76 Thái Hà, phường Trung Liệt, quận Đống Đa, thành phố
+                    Hà Nội, Việt Nam Đại diện pháp luật: <br />
+                    PHẠM MẠNH HÒA | ĐT: 0247.305.9999 | Email: lienhe@shopdunk.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contact" style="width: 60px;height: 120px;">
+        <div class="contact-chat mb-3">
+            <i style="font-size:55px ;" class='bx bxl-messenger'></i>
+        </div>
+        <div class="contact-phone ">
+            <i style="font-size:55px ;" class='bx bx-headphone'></i>
+        </div>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
